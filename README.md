@@ -10,8 +10,7 @@ Production version of the app: [verona-gonch.web.app](https://verona-gonch.web.a
 - normalize styles for all browsers +
 - absolute paths for packages importing +
 - react-router-dom for pages routing +
-- storybook for component creation -
-- dark/light theme -
+- dark/light theme +
 - i18n (formatjs) for RU, BE, EN -
 - Day.js for work with dates
 - react-helmet-async for SEO optimization 

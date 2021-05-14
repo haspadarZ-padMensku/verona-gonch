@@ -1,0 +1,14 @@
+:root[data-theme='light'] {
+  --primary-color: #e78b12;
+  --primary-color-bright: #f89b23;
+  --text-color: #333333;
+  --text-color-light: #4d4d4d;
+  --bg-color: #f5f5f4;
+}
+:root[data-theme='dark'] {
+  --primary-color: #e78b12;
+  --primary-color-bright: #f89b23;
+  --text-color: #cccccc;
+  --text-color-light: #b2b2b2;
+  --bg-color: #1e1e1f;
+}
