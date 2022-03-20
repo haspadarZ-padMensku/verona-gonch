@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'providers/Theme';
 import 'scss/main.scss';
 
@@ -9,14 +9,14 @@ const About = lazy(() => import('routes/About'));
 const App = () => {
   return (
     <ThemeProvider>
-      <Router>
+      <BrowserRouter>
         <Suspense fallback={<div>Loading...</div>}>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
         </Suspense>
-      </Router>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };
